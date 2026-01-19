@@ -1,1 +1,13 @@
+name: first-flw
 
+on: 
+  push:
+    branches:
+        -  main
+jobs:
+  myjob:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: hello # steps name
+        run: echo "hello git hubaction"
+        
